@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>array operation</title>
+<script type="text/javascript">
+
+ var mystring=new Array(2);
+mystring[0]="WEB";
+mystring[1]="PROGRAM";
+mystring[2]="BCA";
+
+
+document.writeln("<marquee><h1> Array operations</h1></marquee>");
+
+document.writeln("<h3>ORIGINAL STRING is </h3>");
+for(var i=0;i< mystring.length;i++)
+{
+   document.writeln("<b><br/>"   +mystring[i]+"</b>");
+}
+   document.writeln("<hr/>");
+   document.writeln("<b><br/>"+"1.LENGTH OF ARRAY :"+mystring.length);
+   var newstr=mystring.concat("development","tool");
+    document.writeln("<b><br/>"+"2.CONCATENATION :"+"   "+newstr);
+    mystring.push("LANG");
+    document.writeln("<b><br/>"+"3.PUSH OPERATION :"+"   "+mystring);
+    var n1=mystring.join("->");
+    document.writeln("<b><br/>"+"4.JOIN OPERATION :"+"   "+n1);
+    
+     mystring.pop();
+    
+    document.writeln("<b><br/>"+"5.POP OPERATION :"+"   "+mystring);
+
+    mystring.reverse();
+
+    document.writeln("<b><br/>"+"6.REVERSE OPERATION :"+"   "+mystring);
+    mystring.sort();
+   document.writeln("<b><br/>"+"7.SORT OPERATION :"+"   "+mystring);
+   mystring.shift();
+   document.writeln("<b><br/>"+"8.SHIFT OPERATION :"+"   "+mystring);
+    mystring.unshift("THIS IS ");
+  document.writeln("<b><br/>"+"9.unSHIFT OPERATION :"+"   "+mystring);
+
+document.writeln("<b><br/>"+"10.BEFORE SPLICE OPERATION :"+"   "+mystring);
+     var newarray=mystring.splice(0,0);
+  document.writeln("<b><br/>"+"10.SPLICE OPERATION :"+"   "+mystring);
+</script>
+</head>
+</html>
+
+
+
+
+
+
+

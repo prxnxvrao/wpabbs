@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> palindrome</title>
+<body>
+<script type="text/javascript">
+
+function pal()
+ {
+    var revStr ="";  //REVSTR=" "
+ var str = document.getElementById("str").value;  //STR=GOD
+  var i = str.length;    //I=3
+  for( var j=i;j>=0;j--)  // J->3 TO 0
+{
+   revStr = revStr+str.charAt(j);  //2->D, 1->O  0->G  ->DOG
+}
+ if(str==revStr)   //GOD==DOG
+{
+    alert(str+" - is Palindrome");
+}
+else
+{
+  alert(str+" - is not  Palindrome");
+}
+
+}
+
+</script>
+<form>
+ Enter a String /number:<input type="text" id="str" name="string" /><br/>
+
+<input type="submit" value="Check" onclick="pal();"/>
+</form>
+</body>
+</html>
+
+
+
+    

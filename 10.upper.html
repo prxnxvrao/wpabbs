@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Uppercase</title>
+       <script type="text/javascript">
+      function changeCase()
+    {
+       document.form1.text1.value=document.form1.text1.value.toUpperCase();
+    }
+   </script>
+</head>
+  
+<body onLoad="form1.type.focus();">
+<center><h1>to convert text to UpperCase</h1></center>
+<form name="form1" method="post">
+Enter User ID<input type="text"name="text1"value="">
+<input type="button" value="change to UpperCase" onclick="changeCase()">
+</form1>
+</body>
+</html>
