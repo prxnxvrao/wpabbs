@@ -1,0 +1,31 @@
+		         
+		  Acharya Bangalore B School
+	             Department of BCA
+	Program no 6: Date and Day Display using Java Script
+<html>
+<head>
+<title> Date Display</title>
+
+<script type="text/javascript">
+var days=["First","Second","Third","Fourth","Fifth","Sixth","Seventh","Eighth","Ninth","Tenth","Eleventh","Twelth","Thirtheenth","Fourtheenth","Fifteenth","Sixtheenth","Seventeen","Eighteenth","Nintheenth","Twentyeth","TwentyFirst","ThwentyFirst","TwentySecond","ThwentyThird","TwentyFourth","TwentyFifth","TwentySixth","TwentySeventh","TwentyEighth","TwentyNinth","Thirtyeth","ThirtyFirst"];
+
+var months=["January","February","March","April","May","June","July","August","Sepetember","October","November","December"];
+
+var year="Two Thousand twenty";
+
+var dateObj=new Date();
+
+var currMonth=dateObj.getMonth();
+var currDate=dateObj.getDate();
+var currYear=dateObj.getFullYear();
+
+//if(currYear==2020)
+alert("Todays date is: "+days[currDate-1]+" "+months[currMonth]+ " "+year);
+//else
+//alert("Todays date is: "+days[currDate-1]+" "+months[currMonth]+ " "+currYear);
+
+</script>
+</head>
+<body bgcolor="yellow">
+</body>
+</html>

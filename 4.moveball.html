@@ -1,0 +1,47 @@
+<html>
+   <head>
+                        <title> basic animation</title>
+      <style>
+            #layer1
+	    {   
+  		position:absolute;
+		top:50px;
+		left:50px;
+	    }
+            #layer2{position:absolute;top:50px;left:150px;}
+            #layer3{position:absolute;top:50px;left:250px;}
+            #layer4{position:absolute;top:50px;left:250px;}
+     </style>
+                   <script type="text/javascript">
+            function moveImage(layer)
+           {
+           var top=window.prompt("enter top value");
+           var left=window.prompt("enter left value");
+           document.getElementById(layer).style.top=top+'px';
+           document.getElementById(layer).style.left=left+'px';
+           }
+           </script>
+      </head>
+                             <body bgcolor="green">
+
+<div id="layer4"><img src="ball.jpg"onclick="moveImage('layer4')"alt=My Image"/></div>
+<div id="layer2"><img src="ball.jpg"onclick="moveImage('layer2')"alt=My Image"/></div>
+<div id="layer3"><img src="ball.jpg"onclick="moveImage('layer3')"alt=My Image"/></div>
+                            </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

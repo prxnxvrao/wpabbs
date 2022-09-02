@@ -1,0 +1,138 @@
+                 
+ 			Acharya Bangalore B School
+
+<html>
+<head>
+<title> student result</title>
+<script type="text/javascript">
+function showResult()
+{
+   var name=document.getElementById("name").value;
+   var cls=document.getElementById("class").value;
+   var mark1=parseInt(document.getElementById("sub1").value);
+   var mark2=parseInt(document.getElementById("sub2").value);
+   var mark3=parseInt(document.getElementById("sub3").value);
+   var mark4=parseInt(document.getElementById("sub4").value);
+   var mark5=parseInt(document.getElementById("sub5").value);
+   var total=mark1+mark2+mark3+mark4+mark5;
+   var avg=total/5;
+   var grade ,result;
+   if(mark1<35||mark2<35||mark3<35||mark4<35||mark5<35) 
+	{ 
+   		result="fail";
+   	}
+   	else if(avg>=80)
+   	{
+    	    grade="A+";
+     	    result="Distinction";
+  	 }
+  	 else if(avg<80 && avg>=60)
+  	 {
+		grade="A";
+		result="First class";
+ 	  }
+	 else if(avg<60 && avg>=50)
+	 {
+		 grade="B";
+		result="First Class"
+	}
+ 	 else if(avg<50 && avg>=35)
+  	 {
+   		 grade="C"
+   		 result="Second Class";
+    	}
+  	 else
+   	{
+    		 grade="D";
+     		 result="Fail";
+    	}
+	
+    document.write("<h2>Result</h2>");
+    document.write("<b>Name   :"+name+"</b><br/><br/>");
+    document.write("<b>Class   :"+cls+"</b><br/><br/>");
+    document.write("<b>Total Marsks   :"+total+"</b><br/><br/>");
+    document.write("<b>Average   :"+avg+"</b><br/><br/>");
+    document.write("<b>Grade  :"+grade+"</b><br/><br/>"); 
+    document.write("<b>Result   :"+result+"</b><br/><br/>");
+ }
+</script>
+</head>
+<body bgcolor="yellow" align="center">
+<form>
+<img src="abbslogo.png" alt="Acharya Bangalore B School" width="200" height="200">
+
+<table border="5"align="center">
+ <tr><th> Student Details</th></tr>
+ <tr>
+     <td>Student Name:</td>
+     <td><input type="text" id="name"/></td>
+ </tr>
+ <tr>
+     <td>Class</td>
+     <td><input type="text" id="class"/></td>
+ </tr>
+ <tr>
+     <td>Subject1 marks</td>
+     <td><input type="text" id="sub1"/></td>
+ </tr>
+ <tr>
+     <td>Subject2 marks</td>
+     <td><input type="text" id="sub2"/></td>
+ </tr>
+<tr>
+     <td>Subject3 marks</td>
+     <td><input type="text" id="sub3"/></td>
+ </tr>
+ <tr>
+     <td>Subject4 marks</td>
+     <td><input type="text" id="sub4"/></td>
+ </tr>
+ <tr>
+     <td>Subject5 marks</td>
+     <td><input type="text" id="sub5"/></td>
+ </tr>
+</table>
+
+<center>
+     </br><input type="button" value="View Result" onclick="showResult()"/>
+</center>
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

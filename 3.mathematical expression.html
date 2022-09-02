@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> Mathematical expression</title>
+
+<script type="text/javascript">
+ function calc()
+{
+  document.frmexp.result.value=eval(document.frmexp.expr.value)
+}
+</script> 
+</head>
+<body style="background-color:#aaaa00;background-image:url('ball.jpg');background-repeat:no-repeat;
+">
+
+
+<form name="frmexp">
+<img src="abbslogo.png" alt="Acharya Bangalore B School" width="200" height="200">
+<br><br>
+<h1>Enter the mathematical expression</h1><br/>
+<table cellpadding="4" cellspacing="0" height=100 width=200 bgcolor="red">
+  <tr>
+     <td> <input type="text" size="20" name="expr"></td>
+     <td> <input type="button" name="button" value="calculate" onClick="calc()"></td>
+  </tr>
+  <tr>
+    <td><b> Result:</b>
+        <input type="text" size="20" name="result"></td>
+    <td> <input type="reset" name="reset" value="Reset"></td>
+  </tr>
+ </table>
+<p> click a reset button for new expression </p>
+</form>
+</body>
+</html> 

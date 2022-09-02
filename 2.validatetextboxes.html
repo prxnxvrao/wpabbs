@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>validatation of which empty</title>
+<script type="text/javascript">
+function validate()
+{
+   var myArray=new Array();  
+   for(var i=0;i<document.form1.length;i++)
+   {
+   	if(document.form1.elements[i].value.length==0)
+   	{
+   		myArray.push(document.form1.elements[i].name);
+  	 }
+  }
+  if(myArray.length !=0)
+   {
+   alert(" the following textboxes are empty:\n"+myArray);
+   }
+}
+
+</script>
+</head>
+<body bgcolor="yellow" align="center">
+<form name="form1">
+    Name:<input type="text"name="Name"/> <br/><br/>
+    Class:<input type="text"name="Class"/> <br/><br/>
+    Age:<input type="text"name="Age"/> <br/><br/>
+    <input type="submit"value="Checking" onClick="validate()"/> 
+</form>
+</body>
+</html>
+
+

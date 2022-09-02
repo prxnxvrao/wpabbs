@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Sum of N natural numbers</title>
+<Script type="text/javascript">
+  var num, n, s=0;
+  num=window.prompt("Enter a number","PlZ enter No");
+  n=parseInt(num);
+  if(n<=0)
+{
+ alert("enter the positive number:");
+}
+document.write("<center> Sum of <b>"+n+"</b> natural number is :");
+findsum(n);
+document.write("<b>"+s+"</b></center>");
+function findsum(n)
+{
+   for(var i=0;i<=n;i++)
+    s=s+i;
+  }
+</Script>
+</head>
+<body bgcolor="yellow">
+<h1>
+<img src="abbslogo.png" alt="Acharya Bangalore B School" width="200" height="200"><br><br>
+</body>
+</html>

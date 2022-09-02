@@ -1,0 +1,76 @@
+
+
+			Acharya Bangalore B School
+<html>
+<head>
+<title>salary Details</title>
+<script type="text/javascript">
+function showSalary()
+{
+     var empname=document.getElementById("empname").value;
+     var empno=document.getElementById("empno").value;
+     var basic=parseInt(document.getElementById("basic").value);
+     var hra=basic*0.4;
+     var da=basic*0.6;
+     var gross=basic+hra+da;
+     
+     var pf=basic*0.13;
+     var tax=gross*0.2;
+     var deductions=pf+tax;
+     var netsalary=gross-deductions;
+
+     document.writeln("<table border='5'>");          
+    document.writeln("<tr><th>Employee Salary Breakup Details</th><tr/>");
+    document.writeln("<tr><th>Emp Name:</th><td>"+empname+"</td><tr/>");
+    document.writeln("<tr><th>Emp No:</th><td>"+empno+"</td><tr/>");
+    document.writeln("<tr><th>Basic Salary:</th><td>"+basic+"</td><tr/>");
+    document.writeln("<tr><th>HRA(40% of Basic):</th><td>"+hra+"</td><tr/>");
+    document.writeln("<tr><th>DA(60% of Basic):</th><td>"+da+"</td><tr/>");
+    document.writeln("<tr><th>Gross Salary:</th><td>"+gross+"</td><tr/>");
+    document.writeln("<tr><th>PF(13% of Basic):</th><td>"+pf+"</td><tr/>");
+   document.writeln("<tr><th>Tax(20% of Gross):</th><td>"+tax+"</td><tr/>");
+   document.writeln("<tr><th>Deductions(PF+Tax):</th><td>"+deductions+"</td><tr/>");
+   document.writeln("<tr><td><b>Net Salary(Gross-Deductions):</b></td>");
+   document.writeln("<td><b>"+netsalary+"</b></td></tr>");
+   document.writeln("</table>");
+    }
+   </script>
+  </head>
+
+  <body>
+  <form>
+<img src="abbslogo.png" alt="Acharya Bangalore B School" width="200" height="200">
+   <table border="5">
+   <tr><th>Employee Details</th></tr>
+   <tr><th>Employee Name</td>
+    <td><input type="text"id="empname"/></td>
+    </tr>
+    <tr><th>Employee No</td>
+    <td><input type="text"id="empno"/></td>
+    </tr>
+    <tr><th>Basic Pay</td>
+    <td><input type="text"id="basic"/></td>
+    </tr>
+    </table>
+
+    <br><input type="button" value="Show Salary Details"onclick="showSalary()"/>
+   </form>
+   </body>
+  </html>
+  
+   
+
+   
+  
+    
+
+
+
+
+
+
+
+
+
+
+    

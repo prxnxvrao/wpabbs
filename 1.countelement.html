@@ -1,0 +1,31 @@
+
+<html>
+  <head>
+     <title> count of number of elements in  a form</title>
+     <script type="text/javascript">
+     function co()
+      {
+        alert("the number of elements in form1 are: "+document.counting.length)
+      }
+     </script>
+  </head>
+
+ <body bgcolor="yellow" align="center">
+  <form name="counting">
+  <img src="abbslogo.png" alt="Acharya Bangalore B School" width="100" height="100">
+<br><br>
+    firstname: <input type="text"name="fname" value=""/><br/>
+    lastname:<input type="text" name="lname" value=""/><br/><br>
+                              <b>Gender</b></br></br>
+      male <input type="radio" NAME="rad" VALUE="radio-button1"/></br></br>
+      female <input type="radio" NAME="rad" VALUE="radio-button2"/></br></br>
+	transgender<input type="radio" NAME="rad" VALUE="radio-button3"/></br></br>
+    <b>Education</b></br></br>
+<pre>
+     undergraduate <input type="checkbox" name="check1"/></br></br>
+     postgraduate <input type="checkbox" name="check1"/></br></br>
+  </pre>
+ <input type="submit" value="Submit" onClick="co()"/></br></br>
+  </form>
+</body>
+</html>
